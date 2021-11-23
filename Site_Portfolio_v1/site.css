@@ -1,0 +1,267 @@
+/* CSS */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style-type: none;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(17, 17, 17);
+   
+}
+
+/*header */
+
+#header {
+    min-height: 25px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    padding-top: 150px;
+}
+
+#header nav {
+    background: rgb(17, 17, 17);
+    position: fixed;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    top: 0;
+    z-index: 1000 !important;
+}
+
+nav a {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    float: right;
+    font-size: 15px;
+    padding: 35px;
+}
+
+nav ul li a:hover {
+    color: tomato;
+}
+
+.home {
+    float: left;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.home:hover {
+    color: tomato;
+}
+
+/* main courousel */
+
+.carrousel{
+    background-color: rgb(27, 27, 27);
+    height: 1000px;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+   
+    }
+    footer  a{
+    color: #fff;
+    }
+    footer  a:hover{
+    text-decoration: underline;
+    }
+    footer  p{
+    margin: 7px 0 0 0;
+    color: #fff;
+    background-color: rgb(17, 17, 17);
+    }
+
+.icone-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    width: 50px;
+    color: white;
+}
+
+
+/* page inscription */
+
+main{
+    
+    background-color: rgb(27, 27, 27);
+    
+    
+}
+
+.card {border: 0;}
+.card-body {padding: .5rem 0; font-size: 14px;}
+.card-title small {font-size: 14px; font-weight: 200;}
+.card-text del {font-weight: 200;}
+.card-img-overlay button i {font-weight: normal;}
+.btn {  padding: .75rem; line-height: 1;}
+
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show>.btn-light.dropdown-toggle {
+  background-color: black;
+  color: white;
+}
+
+/* connexion */
+
+.connexion{
+    background-color: rgb(27, 27, 27);
+    height: 1000px;
+
+}
+
+
+/* boutique */
+
+.card{
+    width: 50%;
+    
+
+}
+
+/* Portfolio */
+
+.portfolio{
+    text-align: center;
+}
+
+.portfolio img{
+    width: 15%;
+    height: 15%; 
+    border: 5px solid #ccc;
+    margin: 30px;
+    
+}
+
+.portfolio2{
+    text-align: center;
+}
+
+.portfolio2 img{
+    width: 28%;
+    height: 28%; 
+    border: 5px solid #ccc;
+    margin: 47px; 
+     
+}
+
+.portfolio3{
+    text-align: center;
+}
+
+.portfolio3 img{
+    width: 45%;
+    height: 45%; 
+    border: 5px solid #ccc;
+    margin: 35px;  
+}
+
+.portfolio4{
+    text-align: center;
+}
+
+.portfolio4 img{
+    width: 22%;
+    height: 22%; 
+    border: 5px solid #ccc;
+    margin: 23px;  
+}
+
+/* contact */
+
+.contact{
+    background-color: rgb(27, 27, 27);
+    height: 1000px;
+}
+
+h1 {
+    color: #fff;
+}
+
+/* Bio */
+
+.bio{
+    background-color: rgb(27, 27, 27);
+    height: 1000px;
+}
+
+.bio fieldset{
+    color: #fff;
+    
+}
+
+.legend{
+    font-size: 4em;
+    padding-bottom: 1em;
+}
+
+form
+{
+    display:block; 
+    text-align: center;   
+    padding-top: 10em;
+}
+
+/* notice */
+
+.notice{
+    background-color: rgb(27, 27, 27);
+    height: 3000px;
+}
+
+.notice p
+{
+    display:block; 
+    color: #fff;
+    text-align: left; 
+    font-size: small;  
+    padding-top: 3em; 
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+/* partie responsive */
+
+@media screen and (max-width: 900px)
+{
+    #header{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    #header {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    #header {
+        width: 95%;
+    }
+    }

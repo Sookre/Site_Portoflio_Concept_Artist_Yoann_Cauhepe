@@ -1,0 +1,482 @@
+/* CSS */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style-type: none;
+}
+
+body{
+  background-color: rgb(24, 24, 24) !important;
+}
+
+
+/*header */
+
+header {
+  background-color: #131313;
+  padding: 0.5em 1em;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo {
+  font-size: 1.0em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  
+}
+#logo-y{
+  height: 100px;
+  width: 100px;
+  
+}
+.logo:hover,
+.logo:active {
+  color: #ffffff;
+}
+nav {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  margin: -1em -1em 1em -1em;
+}
+nav .main-nav {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+nav .main-nav li {
+  visibility: visible;
+}
+nav .main-nav.active {
+  height: auto;
+}
+nav .main-nav a {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5em 1em;
+}
+.main-nav li:nth-of-type(1) a {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 1em;
+}
+.main-nav li:nth-of-type(2) a {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.main-nav li:nth-of-type(3) a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+nav .main-nav a:hover,
+nav .main-nav a:active {
+  color: #ffffff;
+
+}
+.menu-button {
+  float: right;
+ 
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1em 1em 0.5em 1em;
+}
+.menu-button .text {
+  display: none;
+}
+.menu-button a,
+.menu-button a:hover,
+.menu-button a:active {
+  color: #ffffff;
+  font-weight: lighter;
+}
+@media all and (min-width: 18em) {
+  .menu-button .text {
+    display: inline;
+  }
+}
+@media all and (min-width: 48em) {
+  .menu-button {
+    display: none;
+  }
+  nav .main-nav {
+    height: auto !important;
+    float: right;
+    margin-right: 1em;
+    padding-top: 25px;
+   
+  }
+  .main-nav li {
+    display: inline-block;
+  }
+  .main-nav a {
+    background: transparent !important;
+  }
+}
+@media all and (min-width: 20em) and (max-width: 25.999999em) {
+  .main-nav li {
+    display: inline-block;
+    min-width: 49%;
+    max-width: 49%;
+  }
+}
+@media all and (min-width: 26em) and (max-width: 48em) {
+  .main-nav li {
+    display: inline-block;
+    min-width: 24%;
+    max-width: 24%;
+  }
+  .main-nav li a {
+    text-align: center;
+  }
+}
+
+/* main carousel */
+
+.carrousel{
+    padding-top: 150px;
+    height: 1000px;
+}
+
+
+/* Footer */
+
+footer{
+    padding-top: 10em;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    }
+    
+
+    footer  a{
+    color: #fff;
+    }
+    footer  a:hover{
+    text-decoration: underline;
+    }
+    footer  p{
+    margin: 7px 0 0 0;
+    color: #fff;
+    background-color: rgb(17, 17, 17);
+    }
+
+.icone-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    width: 50px;
+    color: white;
+}
+
+
+/* boutique */
+
+.card{
+    width: 50%;
+    
+
+}
+
+/* Portfolio */
+
+.img-wrapper a img{
+  width: 100% !important;
+}
+
+#gallery {
+  padding-top: 40px;
+}
+
+#galleryb {
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 991px) {
+  #gallery {
+    padding: 60px 30px 0 30px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  #galleryb {
+    padding: 60px 30px 0 30px;
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+.img-wrapper img {
+  width: 100%;
+}
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.img-overlay-paysage {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.img-overlay i {
+  color: #fff;
+  font-size: 3em;
+}
+
+.img-overlay-paysage i {
+  color: #fff;
+  font-size: 3em;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  
+}
+
+
+#overlayb {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#overlay img {
+  margin: 0;
+  width: 80%; 
+  height: auto;
+  object-fit: contain;
+  padding: 5%;
+}
+
+#overlayb img {
+  margin: 0;
+  width: 80%; 
+  height: auto;
+  object-fit: contain;
+  padding: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  #overlay img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    width: 42%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #img-overlay-paysage {
+    width: 80% !important;  
+  }
+}
+
+/* button portrait */
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+
+#nextButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #nextButton {
+    font-size: 3em;
+  }
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+
+#prevButton:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  #prevButton {
+    font-size: 3em;
+  }
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#exitButton:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  #exitButton {
+    font-size: 3em;
+  }
+}
+
+
+ /* button paysage */
+
+#nextButtonb {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+
+#nextButtonb:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  #nextButtonb {
+    font-size: 3em;
+  }
+}
+
+#prevButtonb {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+
+#prevButtonb:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  #prevButtonb {
+    font-size: 3em;
+  }
+}
+
+#exitButtonb {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#exitButtonb:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  #exitButtonb {
+    font-size: 3em;
+  }
+}
+
+/* contact */
+
+ 
+h1 {
+  padding-top: 2em;
+    color: #fff;
+}
+
+
+
+/* Bio */
+
+.img-responsive {
+  width: 22%;
+  height: 22%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4em;
+
+}
+
+.bio fieldset{
+    color: #fff;
+    
+}
+
+.legend{
+    font-size: 4em;
+    padding-bottom: 1em;
+}
+
+form
+{
+    display:block; 
+    text-align: center;   
+    padding-top: 2em;
+}
+
+
+/* notice */
+.notice p
+{
+    display:block; 
+    color: #fff;
+    text-align: left; 
+    font-size: small;  
+    padding-top: 3em; 
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
